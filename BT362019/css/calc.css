@@ -1,0 +1,22 @@
+#content {
+    position: fixed;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #111;
+    padding: 20px;
+}
+
+input {
+    border: 1px solid #36383b;
+    padding: 5px;
+}
+
+button {
+    width: 40px;
+}
+
+#errorMessage {
+    color: red;
+}

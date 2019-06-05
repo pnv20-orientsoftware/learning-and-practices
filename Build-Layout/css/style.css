@@ -175,23 +175,21 @@ header .navbar-default .navbar-collapse a:hover {
     text-decoration: underline;
 }
 
-
-/* 
 #order-list {
-    display: block;
+    display: flex;
 }
 
 #left-content {
-    order: 1;
+    order: -1;
 }
 
 #m-content {
-    order: 2;
+    order: 0;
 }
 
 #right-content {
-    order: 3;
-} */
+    order: 1;
+}
 
 
 /* FOOTER */

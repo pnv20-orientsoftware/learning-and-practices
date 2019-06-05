@@ -172,14 +172,17 @@ header .navbar-toggle {
 
 #left-content {
     order: 1;
+    width: 100%;
 }
 
 #m-content {
     order: 2;
+    width: 100%;
 }
 
 #right-content {
     order: 3;
+    width: 100%;
 }
 
 

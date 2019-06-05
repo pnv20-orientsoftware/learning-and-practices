@@ -19,13 +19,14 @@
 }
 
 @media screen and (max-width: 767px) {
+    html {
+        overflow: auto;
+        overflow-x: hidden;
+    }
     header {
         position: fixed;
         z-index: 1000;
         width: 100%;
-    }
-    header .navbar-default .navbar-collapse {
-        border-color: rgba(0, 0, 0, 0.4);
     }
     header .navbar-default .navbar-brand {
         font-size: 30px;
@@ -33,17 +34,22 @@
         top: -70%;
         left: 40%;
     }
+    header .collapse {
+        display: block;
+    }
     header .navbar-nav {
+        overflow: auto;
         position: fixed;
         top: -8px;
-        left: 15px;
+        left: -224px;
         width: 240px;
         height: 100%;
         display: inline-block;
-        background: rgba(0, 0, 0, 0.75) url('../img/bg01.jpg');
-        background-repeat: repeat;
+        background: #111;
+        /* background: rgba(0, 0, 0, 0.75); */
         z-index: 1000;
         border-right: solid 1px rgba(0, 0, 0, 0.4);
+        padding: 0 20px;
     }
     header .navbar-default .navbar-nav a {
         font-size: 22px;

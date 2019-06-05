@@ -4,12 +4,17 @@ body {
     background: #D4D9DD url('../img/bg01.jpg');
     color: rgb(211, 211, 211);
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: relative;
 }
 
 header .navbar-default .navbar-brand {
     color: #FFFFFF;
     font-size: 40px;
     line-height: 100px;
+}
+
+header .navbar-default .navbar-brand:hover {
+    color: #FFFFFF;
 }
 
 header .navbar-default {
@@ -30,6 +35,10 @@ header .navbar-toggle {
     float: left;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+header .navbar-default .navbar-collapse a:hover {
+    color: #FFFFFF;
 }
 
 
@@ -166,24 +175,23 @@ header .navbar-toggle {
     text-decoration: underline;
 }
 
+
+/* 
 #order-list {
-    display: flex;
+    display: block;
 }
 
 #left-content {
     order: 1;
-    width: 100%;
 }
 
 #m-content {
     order: 2;
-    width: 100%;
 }
 
 #right-content {
     order: 3;
-    width: 100%;
-}
+} */
 
 
 /* FOOTER */

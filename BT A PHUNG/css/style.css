@@ -37,6 +37,10 @@ header .navbar-toggle {
     margin-left: 10px;
 }
 
+header .navbar-default .navbar-collapse {
+    border-color: rgba(36, 36, 36, 0.75);
+}
+
 header .navbar-default .navbar-collapse a:hover {
     color: #FFFFFF;
 }

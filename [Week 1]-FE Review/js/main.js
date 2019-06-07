@@ -3,7 +3,6 @@
     var $window = $(window),
         $body = $('body');
 
-    // Breakpoints.
     breakpoints({
         xlarge: ['1281px', '1680px'],
         large: ['981px', '1280px'],
@@ -11,9 +10,6 @@
         small: [null, '736px']
     });
 
-    // Nav.
-
-    // Title Bar.
     $(
             '<div id="titleBar">' +
             '<a href="#navPanel" class="toggle"></a>' +
@@ -22,7 +18,6 @@
         )
         .appendTo($body);
 
-    // Panel.
     $(
             '<div id="navPanel">' +
             '<nav>' +

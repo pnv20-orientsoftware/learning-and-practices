@@ -1,229 +1,197 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="">
 
 <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Three Column | Halcyonic</title>
+    <link rel="icon" href="public/public/img/icon-title.ico" type="image/x-icon" />
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./public/style1.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Google Font -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400&display=swap&subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="public/style.css" rel="stylesheet">
+    <link href="css/breakpoint.css" rel="stylesheet">
+    <!-- Font Awesome 4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <div id="MenucINcontainer" class="row">
-                <div class="col-4">
-                    <br>
-                    <!-- Logo -->
-                    <h1><a id="logo" href="home.html">Halcyonic</a></h1>
-                </div>
-                <div class="col-8">
-                    <nav class="navbar">
-                        <span class="navbar-toggle" id="js-navbar-toggle">
-                             <i class="fa fa-bars" aria-hidden="true"></i></i>
-                        </span>
-                        <ul class="main-nav" id="js-menu">
-                            <li>
-                                <a href="./home.html" class="nav-links">Homepage</a>
-                            </li>
-                            <li>
-                                <a href="./page1.html" class="nav-links">Three Column </a>
-                            </li>
-                            <li>
-                                <a href="./page2.html" class="nav-links">Two Column #1</a>
-                            </li>
-                            <li>
-                                <a href="./page3.html" class="nav-links">Two Column #2 </a>
-                            </li>
-                            <li>
-                                <a href="./page4.html" class="nav-links">One Column</a>
-                            </li>
+
+    <header>
+        <div class="container-fruid">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="container" style="position: relative">
+                    <div class="navbar-header">
+                        <button type="button" id="open-menu" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <button type="button" id="close-menu" class="navbar-toggle" style="display: none">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="home.html">Halcyonic</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="home.html">Homepage</a></li>
+                            <li><a href="page1.html">Three Column</a></li>
+                            <li><a href="page2.html">Two Column #1</a></li>
+                            <li><a href="page3.html">Two Column #2</a></li>
+                            <li><a href="page4.html">One Column</a></li>
                         </ul>
-                    </nav>
-
+                    </div>
                 </div>
-            </div>
+                <!-- /.navbar-collapse -->
+            </nav>
         </div>
-        <section id="contentpage2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                        <!-- Main Content -->
-                        <section id="contentpage2left">
-                            <header>
-                                <h2>Two Column #1</h2>
-                                <h3>A generic two column layout</h3>
-                            </header>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam metus, congue vel suscipit ut, dignissim non risus. Vestibulum ante est, fringilla nec placerat eu, vestibulum vitae diam. Integer eget egestas eros. Duis enim erat, mollis quis lacinia
-                                eget, blandit nec ipsum. Donec vitae turpis ipsum. Aliquam mauris libero, sagittis in eleifend at, mattis imperdiet velit. Donec urna risus, rutrum molestie varius ac, lacinia sit amet augue. Nam ultrices elementum eros.
-                            </p>
-                            <p>
-                                Sed faucibus viverra ligula, non varius magna semper vitae. Donec eu justo ut ipsum hendrerit congue nec eu risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                egestas tempus. Cras convallis odio sit amet risus convallis porttitor. Integer vehicula fermentum ligula at pretium. Suspendisse semper iaculis eros, eu aliquam justo imperdiet vel. Proin nec dictum mi. Duis commodo enim
-                                non tellus interdum elit. Suspendisse fermentum adipiscing nisi, a tempor libero malesuada at. Morbi lacinia dui adipiscing risus eleifend tincidunt. Proin eu mauris eu tellus eleifend hendrerit.
-                            </p>
-                            <p>
-                                Mauris sit amet tellus urna. In facilisis, tortor vitae ultricies egestas, odio mi rhoncus arcu, quis euismod felis felis et velit. Mauris varius consectetur erat egestas tempus. Cras convallis odio sit amet risus convallis porttitor. Integer vehicula
-                                fermentum ligula at pretium. Suspendisse semper iaculis eros, eu aliquam justo imperdiet vel. Proin nec dictum mi. Duis commodo enim non tellus interdum iaculis. Phasellus ultrices diam sit amet orci lacinia sed consequat
-                                dui auctor.
-                            </p>
-                            <p>
-                                Sed faucibus viverra ligula, non varius magna semper vitae. Donec eu justo ut ipsum hendrerit congue nec eu risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                egestas tempus. Cras convallis odio sit amet risus convallis porttitor. Integer vehicula fermentum ligula at pretium. Suspendisse semper iaculis eros, eu aliquam justo imperdiet vel. Proin nec dictum mi. Duis commodo enim
-                                non tellus interdum elit. Suspendisse fermentum adipiscing nisi, a tempor libero malesuada at. Morbi lacinia dui adipiscing risus eleifend tincidunt. Proin eu mauris eu tellus eleifend hendrerit.
-                            </p>
-                            <p>
-                                Mauris sit amet tellus urna. In facilisis, tortor vitae ultricies egestas, odio mi rhoncus arcu, quis euismod felis felis et velit. Mauris varius consectetur erat egestas tempus. Cras convallis odio sit amet risus convallis porttitor. Integer vehicula
-                                fermentum ligula at pretium. Suspendisse semper iaculis eros, eu aliquam justo imperdiet vel. Proin nec dictum mi. Duis commodo enim non tellus interdum iaculis. Phasellus ultrices diam sit amet orci lacinia sed consequat
-                                dui auctor.
-                            </p>
-                            <br><br><br><br>
-                        </section>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+    </header>
 
-                        <!-- Sidebar -->
-                        <section id="contentpage2right1">
-                            <header>
-                                <h2>Magna Phasellus</h2>
-                            </header>
-                            <ul class="link-list">
-                                <li><a href="#">Sed dolore viverra</a></li>
-                                <hr>
-                                <li><a href="#">Ligula non varius</a></li>
-                                <hr>
-                                <li><a href="#">Nec sociis natoque</a></li>
-                                <hr>
-                                <li><a href="#">Penatibus et magnis</a></li>
-                                <hr>
-                                <li><a href="#">Dis parturient montes</a></li>
-                                <hr>
-                                <li><a href="#">Nascetur ridiculus</a></li>
-                            </ul>
-                        </section>
-                        <section id="contentpage2right2">
-                            <span>
-                            <header>
-                            <h2>Ipsum Dolor</h2>
-                            </header>
-                            <p id="text">Vehicula fermentum ligula at pretium. Suspendisse semper iaculis eros,
-                                 eu aliquam iaculis. Phasellus ultrices diam sit amet orci lacinia sed consequat.
-                            </p>
-                            <ul class="link-list">
-                                <li><a href="#">Sed dolore viverra</a></li>
-                                <hr>
-                                <li><a href="#">Ligula non varius</a></li>
-                                <hr>
-                                <li><a href="#">Dis parturient montes</a></li>
-                                <hr>
-                                <li><a href="#">Nascetur ridiculus</a></li>
-                            </ul>
-                        </span>
-                        </section>
-                    </div>
-                </div>
-            </div>
-            <br><br><br><br>
-        </section>
-    </div>
-    <section id="footer">
+    <div id="content">
         <div class="container">
-            <div class="row">
+
+            <div id="left-content">
                 <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-
-                    <!-- Links -->
                     <section>
-                        <h2>Links to Important Stuff</h2>
-                        <div>
-                            <div class="row" id="footerleft">
-                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="footerleft1">
-                                    <ul class="link-list last-child">
-                                        <li><a href="#">Neque amet dapibus</a></li>
-                                        <hr>
-                                        <li><a href="#">Sed mattis quis rutrum</a></li>
-                                        <hr>
-                                        <li><a href="#">Accumsan suspendisse</a></li>
-                                        <hr>
-                                        <li><a href="#">Eu varius vitae magna</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="footerleft2">
-                                    <ul class="link-list last-child">
-                                        <li><a href="#">Neque amet dapibus</a></li>
-                                        <hr>
-                                        <li><a href="#">Sed mattis quis rutrum</a></li>
-                                        <hr>
-                                        <li><a href="#">Accumsan suspendisse</a></li>
-                                        <hr>
-                                        <li><a href="#">Eu varius vitae magna</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="footerleft3">
-                                    <ul class="link-list last-child">
-                                        <li><a href="#">Neque amet dapibus</a></li>
-                                        <hr>
-                                        <li><a href="#">Sed mattis quis rutrum</a></li>
-                                        <hr>
-                                        <li><a href="#">Accumsan suspendisse</a></li>
-                                        <hr>
-                                        <li><a href="#">Eu varius vitae magna</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="footerleft4">
-                                    <ul class="link-list last-child">
-                                        <li><a href="#">Neque amet dapibus</a></li>
-                                        <hr>
-                                        <li><a href="#">Sed mattis quis rutrum</a></li>
-                                        <hr>
-                                        <li><a href="#">Accumsan suspendisse</a></li>
-                                        <hr>
-                                        <li><a href="#">Eu varius vitae magna</a></li>
-                                        <hr>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-
-                    <!-- Blurb -->
-                    <section id="footerright">
-                        <h2>An Informative Text Blurb</h2>
+                        <h1>Two Column#1</h1>
+                        <h3 style="color: #a3a1a1">A generic two column layout</h3>
                         <p>
-                            Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi, dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh lorem ipsum amet dolor
-                            sit amet lorem ipsum consequat gravida justo mollis.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam temporibus accusantium reprehenderit officia exercitationem alias mollitia rem corrupti eaque aliquam soluta similique earum architecto aliquid blanditiis neque iste quos eos eum aperiam
+                            vero aut enim, possimus eligendi. Deserunt deleniti dicta odio nisi ratione architecto obcaecati quae quis id quaerat velit quia numquam quam harum adipisci, iste natus, ad itaque at.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, voluptas. Impedit, ipsam quo? Cum voluptatem harum accusamus incidunt unde ex corrupti mollitia qui adipisci modi quaerat a, debitis vero. Deleniti dignissimos at atque libero error repudiandae
+                            fuga officia quam amet nostrum ducimus distinctio cumque ab hic voluptatum natus nihil reiciendis laborum sunt consequuntur, eum itaque excepturi iure rerum! Provident blanditiis aut facere, neque error itaque placeat rem cupiditate,
+                            eveniet iure suscipit minima sed voluptatum inventore!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos modi, earum reiciendis, deserunt ad enim consequatur nobis aut voluptatibus nisi ratione! Dolor, dolorum dicta. Labore culpa odit ad exercitationem sequi.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sequi natus placeat ipsum, labore tempore ut perspiciatis aut, reiciendis voluptatibus cumque itaque fuga explicabo. Libero eius iste, repellendus qui tempora labore voluptatum soluta, sapiente
+                            similique quisquam laudantium eaque dolorum suscipit odio dolores voluptate ipsam. Nemo laboriosam enim cum reiciendis ipsum eligendi deleniti voluptatem optio. Maxime adipisci inventore facere natus voluptatibus.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit animi optio rerum cumque, ad saepe iure non delectus aspernatur, repudiandae debitis id est unde fuga. Magnam, commodi perspiciatis corporis sed obcaecati dolorum asperiores doloribus soluta,
+                            a ullam id in nihil!
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore perferendis ab minus dolores laborum veritatis sequi ad ipsum voluptatum similique? Perspiciatis optio adipisci dolore pariatur harum accusamus et, eum magni suscipit saepe doloribus
+                            fuga error nostrum fugit ipsum, voluptate quaerat deleniti labore corporis. Rem repellendus exercitationem ut, non modi dolores temporibus quaerat ex rerum dolorem eius quae perspiciatis suscipit hic?
                         </p>
                     </section>
-
                 </div>
             </div>
-        </div>
-        <hr>
-        <div id="copyright">
-            © Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a> | Demo Images: <a href="http://unsplash.com">Unsplash</a>
-        </div>
-    </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./public/menu.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <div id="right-content">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <section>
+                        <h1>Magna Phasellus</h1>
+                        <ul class="link-list">
+                            <li><a href="#">Sed dolore viverra</a></li>
+                            <li><a href="#">Ligula non varius</a></li>
+                            <li><a href="#">Dis parturient montes</a></li>
+                            <li><a href="#">Nascetur ridiculus</a></li>
+                            <li><a href="#">Dis parturient montes</a></li>
+                            <li><a href="#">Nascetur ridiculus</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Ipsum Dolor</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, reiciendis. Consectetur omnis velit dolorum!
+                        </p>
+                        <ul class="link-list">
+                            <li><a href="#">Sed dolore viverra</a></li>
+                            <li><a href="#">Ligula non varius</a></li>
+                            <li><a href="#">Dis parturient montes</a></li>
+                            <li><a href="#">Nascetur ridiculus</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
 
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pull-right">
+                <h3>An Informative Text Blurb</h3>
+                <p class="blurb">
+                    Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis sed rutrum accumsan sed. Suspendisse eu varius nibh lorem ipsum amet dolor sit amet lorem ipsum consequat gravida
+                    justo mollis.
+                </p>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <h3>Links to Important Stuff</h3>
+
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <ul class="footer-list">
+                        <li><a href="#">Neque amet dapibus</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Eu varius vitae magna</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <ul class="footer-list">
+                        <li><a href="#">Neque amet dapibus</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Eu varius vitae magna</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <ul class="footer-list">
+                        <li><a href="#">Neque amet dapibus</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Eu varius vitae magna</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <ul class="footer-list">
+                        <li><a href="#">Neque amet dapibus</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Eu varius vitae magna</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="copyright" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+            © Untitled. All rights reserved. | Design:
+            <a href="#">HTML5 UP</a> | Demo Images:
+            <a href="#">Unsplash</a>
+        </div>
+
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="public/menu.js"></script>
 </body>
 
 </html>

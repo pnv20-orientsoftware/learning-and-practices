@@ -1,296 +1,258 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="">
 
 <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./public/style1.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage | Halcyonic</title>
+    <link rel="icon" href="public/img/icon-title.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Google Font -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400&display=swap&subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="public/style.css" rel="stylesheet">
+    <!-- Font Awesome 4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <div id="MenucINcontainer" class="row">
-                <div class="col-4">
-                    <br>
-                    <!-- Logo -->
-                    <h1><a id="logo" href="home.html">Halcyonic</a></h1>
-                </div>
-                <div class="col-8">
-                    <nav class="navbar">
-                        <span class="navbar-toggle" id="js-navbar-toggle">
-                             <i class="fa fa-bars" aria-hidden="true"></i></i>
-                        </span>
-                        <ul class="main-nav" id="js-menu">
-                            <li>
-                                <a href="./home.html" class="nav-links">Homepage</a>
-                            </li>
-                            <li>
-                                <a href="./page1.html" class="nav-links">Three Column </a>
-                            </li>
-                            <li>
-                                <a href="./page2.html" class="nav-links">Two Column #1</a>
-                            </li>
-                            <li>
-                                <a href="./page3.html" class="nav-links">Two Column #2 </a>
-                            </li>
-                            <li>
-                                <a href="./page4.html" class="nav-links">One Column</a>
-                            </li>
+
+    <header>
+        <div class="container-fruid">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="container" style="position: relative">
+                    <div class="navbar-header">
+                        <button type="button" id="open-menu" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <button type="button" id="close-menu" class="navbar-toggle" style="display: none">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="home.html">Halcyonic</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="home.html">Homepage</a></li>
+                            <li><a href="page1.html">Three Column</a></li>
+                            <li><a href="page2.html">Two Column #1</a></li>
+                            <li><a href="page3.html">Two Column #2</a></li>
+                            <li><a href="page4.html">One Column</a></li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
-            </div>
+                <!-- /.navbar-collapse -->
+            </nav>
         </div>
-        <hr>
-        <div id="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <!-- Banner Copy -->
-                        <h4 style="color: white">We do something really useful, important, and unique. Learn all about it here ...</h4>
-                        <br><br> <a href="#" class="button-large">Go on, click me!</a>
+    </header>
 
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <!-- Banner Image -->
-                        <a class="bordered-feature-image" href="#"><img alt="" src="public/images/banner.jpg"></a>
-                    </div>
-                </div>
+    <div id="banner">
+        <div class="container">
+
+            <div class="col-xs-12 col-sm-12 col-lg-6 pull-right">
+                <a href="#"><img class="img-border" src="public/img/banner.jpg" class="img-100" alt="banner"></a>
             </div>
+
+            <div class="col-xs-12 col-sm-12 col-lg-6">
+                <h2 class="text-white">We do something really useful, important, and unique. Learn all homeContent it here ...</h2>
+                <button class="btn btn-go-on col-xs-12 col-sm-6">Go on, click me!</button>
+            </div>
+
         </div>
-        <hr>
-        <section id="slide">
-            <div class="container"><br>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <a href="#" class="thumbnail">
-                            <img src="public/images/pic01.jpg" alt="">
-                        </a>
-                        <h4>Welcome to Halcyonic</h4>
-                        <p>This is Halcyonic, a free site template by AJfor HTML5 UP.It's responsive, built on HTML5 + CSS3, and includes 5 unique page layouts.</p>
-                    </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        <a href="#" class="thumbnail">
-                            <img src="public/images/pic02.jpg" alt="">
-                        </a>
-                        <h4>Responsive You Say?</h4>
-                        <p>Yes! Halcyonic is built to be fully responsive so it looks great at every screen size, from desktops to tablets to mobile phones.</p>
+    </div>
 
-                    </div>
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <a href="#" class="thumbnail">
-                            <img src="public/images/pic03.jpg" alt="">
-                        </a>
-                        <h4>License Info</h4>
-                        <p>Halcyonic is licensed under the CCA license, so use it for personal/commercial use as much as you like (just keep our credits intact).</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <a href="#" class="thumbnail">
-                            <img src="public/images/pic04.jpg" alt="">
-                        </a>
-                        <h4>Volutpat etiam aliquam</h4>
-                        <p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna mollis.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <br><br>
-        <section id="content">
-            <div class="container">
-                <br><br>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="contentleft">
-                        <section>
-                            <header>
-                                <span>
-                                <h2>Who We Are</h2>
-                                <h3>A subheading about who we are</h3><br>
-                                <a href="#" class="feature-image"><img src="public/images/pic05.jpg" alt=""></a>
+    <div id="main-content">
+        <div class="container">
 
-                            </header>
-                            <p>
-                                Duis neque nisi, dapibus sed mattis quis, rutrum accumsan magna sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis justo facilisis quis. Sed sagittis amet lorem ipsum.
-                            </p>
-                        </section>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <section>
+                    <a href="#"><img src="public/img/pic01.jpg" class="img-100 img-border"></a>
+                    <div class="caption">
+                        <h2 class="text-white">Welcome to Halcyonic</h2>
+                        <p>This is <span href="#" class="text-white">Halcyonic</span>, a free site template by <a href="#" class="text-white">AJ</a> for <a href="#" class="text-white">HTML5 UP</a>. It's responsive, built on HTML5 + CSS3.</p>
                     </div>
-
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="contentcenter">
-                        <section>
-                            <header>
-                                <h2>What We Do</h2>
-                                <h3>A subheading about what we do</h3><br>
-                            </header>
-                            <ul class="check-list">
-
-                                <li> <img src="public/images/icon.PNG" alt=""> Mattis quis rutrum accum</li>
-                                <hr>
-                                <li><img src="public/images/icon.PNG" alt=""> Eu varius nibh suspendisse lorem</li>
-                                <hr>
-                                <li><img src="public/images/icon.PNG" alt=""> Magna eget odio amet mollis justo</li>
-                                <hr>
-                                <li><img src="public/images/icon.PNG" alt=""> Facilisis quis sagittis mauris</li>
-                                <hr>
-                                <li><img src="public/images/icon.PNG" alt=""> Amet tellus gravida lorem ipsum</li>
-                            </ul>
-                        </section>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="contentright">
-                        <section>
-                            <header>
-                                <h2>What People Are Saying</h2>
-                                <h3>And a final subheading about our clients</h3><br>
-                            </header>
-                            <ul class="quote-list">
-                                <li>
-                                    <div class="row">
-
-                                        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                            <img  src="public/images/pic06.jpg" alt="">
-                                        </div>
-                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-                                            <p id="in1">"Neque nisidapibus mattis"</p>
-                                            <span id="hoa1">Jane Doe, CEO of UntitledCorp</span>
-                    </div>
-                </div>
-                </li>
-                <hr>
-                </ul>
-                <div class="row">
-
-                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                        <img src="public/images/pic07.jpg" alt="">
-                    </div>
-                    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-                        <p id="in2">"Lorem ipsum consequat!"</p>
-                        <span id="hoa2">John Doe, President of FakeBiz</span>
-                    </div>
-                </div>
-
-                </ul>
-                <hr>
-                <li>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                            <img src="public/images/pic08.jpg" alt="">
-                        </div>
-                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-                            <p id="in3">"Magna veroeros amet tempus"</p>
-                            <span id="hoa3">Mary Smith, CFO of UntitledBiz</span>
-                        </div>
-                    </div>
-                </li>
-
-                </ul>
                 </section>
             </div>
 
-    </div>
-    </div>
-    <br><br><br>
-    </section>
-
-    </div>
-    <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-
-                    <!-- Links -->
-                    <section>
-                        <h2>Links to Important Stuff</h2>
-                        <div>
-                            <div class="row" id="footerleft">
-                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="footerleft1">
-                                    <ul class="link-list last-child">
-                                        <li><a href="#">Neque amet dapibus</a></li>
-                                        <hr>
-                                        <li><a href="#">Sed mattis quis rutrum</a></li>
-                                        <hr>
-                                        <li><a href="#">Accumsan suspendisse</a></li>
-                                        <hr>
-                                        <li><a href="#">Eu varius vitae magna</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="footerleft2">
-                                    <ul class="link-list last-child">
-                                        <li><a href="#">Neque amet dapibus</a></li>
-                                        <hr>
-                                        <li><a href="#">Sed mattis quis rutrum</a></li>
-                                        <hr>
-                                        <li><a href="#">Accumsan suspendisse</a></li>
-                                        <hr>
-                                        <li><a href="#">Eu varius vitae magna</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="footerleft3">
-                                    <ul class="link-list last-child">
-                                        <li><a href="#">Neque amet dapibus</a></li>
-                                        <hr>
-                                        <li><a href="#">Sed mattis quis rutrum</a></li>
-                                        <hr>
-                                        <li><a href="#">Accumsan suspendisse</a></li>
-                                        <hr>
-                                        <li><a href="#">Eu varius vitae magna</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="footerleft4">
-                                    <ul class="link-list last-child">
-                                        <li><a href="#">Neque amet dapibus</a></li>
-                                        <hr>
-                                        <li><a href="#">Sed mattis quis rutrum</a></li>
-                                        <hr>
-                                        <li><a href="#">Accumsan suspendisse</a></li>
-                                        <hr>
-                                        <li><a href="#">Eu varius vitae magna</a></li>
-                                        <hr>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-
-                    <!-- Blurb -->
-                    <section id="footerright">
-                        <h2>An Informative Text Blurb</h2>
-                        <p>
-                            Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi, dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh lorem ipsum amet dolor
-                            sit amet lorem ipsum consequat gravida justo mollis.
-                        </p>
-                    </section>
-
-                </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <section>
+                    <a href="#"><img src="public/img/pic02.jpg" class="img-100 img-border"></a>
+                    <div class="caption">
+                        <h2 class="text-white">Responsive You Say?</h2>
+                        <p>Yes! Halcyonic is built to be fully responsive so it looks great at every screen size, from desktops to tablets.</p>
+                    </div>
+                </section>
             </div>
-        </div>
-        <hr>
-        <div id="copyright">
-            © Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a> | Demo Images: <a href="http://unsplash.com">Unsplash</a>
-        </div>
-    </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./public/menu.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <section>
+                    <a href="#"><img src="public/img/pic03.jpg" class="img-100 img-border"></a>
+                    <div class="caption">
+                        <h2 class="text-white">License Info</h2>
+                        <p>Halcyonic is licensed under the <a href="#" class="text-white">CCA</a> license, so use it for personal/commercial use as much as you like.</p>
+                    </div>
+                </section>
+            </div>
 
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <section>
+                    <a href="#"><img src="public/img/pic04.jpg" class="img-100 img-border"></a>
+                    <div class="caption">
+                        <h2 class="text-white">Volutpat etiam aliquam</h2>
+                        <p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh.</p>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+    <!-- #main-content -->
+
+    <div id="homeContent">
+        <div class="container">
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <section class="homeContent-part">
+                    <h1>Who We Are</h1>
+                    <h3 class="text">A subheading homeContent who we are</h3>
+                    <a href="#"><img class="image img-100" src="public/img/pic05.jpg"></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, et ipsam, quisquam maxime magnam vero, asperiores harum repudiandae ducimus distinctio dolores modi neque cumque cupiditate. Similique ut tempore sed magnam adipisci
+                        doloremque quasi minus eos quasi minus eos blanditiis.</p><br>
+                </section>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <section class="homeContent-part">
+                    <h1>What We Do</h1>
+                    <h3 class="text">A subheading homeContent what we do</h3>
+                    <ul class="doing-list">
+                        <li><i class="fa fa-check fa-lg check-red" aria-hidden="true"></i> Sed mattis quis rutrum accum</li>
+                        <li><i class="fa fa-check fa-lg check-red" aria-hidden="true"></i> Eu varius nibh suspendisse lorem</li>
+                        <li><i class="fa fa-check fa-lg check-red" aria-hidden="true"></i> Magna eget odio amet mollis justo</li>
+                        <li><i class="fa fa-check fa-lg check-red" aria-hidden="true"></i> Facilisis quis sagittis mauris</li>
+                        <li><i class="fa fa-check fa-lg check-red" aria-hidden="true"></i> Amet tellus gravida lorem ipsum</li>
+                    </ul>
+                    <br><br>
+                </section>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <section class="homeContent-part">
+                    <h1>What People Are Saying</h1>
+                    <h3 class="text">And a final subheading homeContent our clients</h3>
+                    <section>
+                        <ul class="quote-list">
+                            <li>
+                                <img src="public/img/pic06.jpg">
+                                <aside>
+                                    <q><i>Neque nisidapibus mattis</i></q>
+                                    <p>Jane Doe, CEO of UntitledCorp</p>
+                                </aside>
+                            </li>
+                            <li>
+                                <img src="public/img/pic07.jpg">
+                                <aside>
+                                    <q><i>Neque nisidapibus mattis</i></q>
+                                    <p>Jane Doe, CEO of UntitledCorp</p>
+                                </aside>
+                            </li>
+                            <li>
+                                <img src="public/img/pic07.jpg">
+                                <aside>
+                                    <q><i>Neque nisidapibus mattis</i></q>
+                                    <p>Jane Doe, CEO of UntitledCorp</p>
+                                </aside>
+                            </li>
+                        </ul>
+                        <section>
+
+                        </section>
+                    </section>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pull-right">
+                <h3>An Informative Text Blurb</h3>
+                <p class="blurb">
+                    Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis sed rutrum accumsan sed. Suspendisse eu varius nibh lorem ipsum amet dolor sit amet lorem ipsum consequat gravida
+                    justo mollis.
+                </p>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <h3>Links to Important Stuff</h3>
+
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <ul class="footer-list">
+                        <li><a href="#">Neque amet dapibus</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Eu varius vitae magna</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <ul class="footer-list">
+                        <li><a href="#">Neque amet dapibus</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Eu varius vitae magna</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <ul class="footer-list">
+                        <li><a href="#">Neque amet dapibus</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Eu varius vitae magna</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <ul class="footer-list">
+                        <li><a href="#">Neque amet dapibus</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Sed mattis quis rutrum</a></li>
+                        <li><a href="#">Eu varius vitae magna</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="copyright" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+            © Untitled. All rights reserved. | Design:
+            <a href="#">HTML5 UP</a> | Demo Images:
+            <a href="#">Unsplash</a>
+        </div>
+
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="public/menu.js"></script>
 </body>
 
 </html>

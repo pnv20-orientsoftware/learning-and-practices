@@ -1,8 +1,14 @@
+@media (max-width: 1200px) {
+    header .navbar-default .navbar-nav a {
+        padding: 16px 8px;
+    }
+}
+
 @media (max-width: 991px) {
     #banner,
     #about,
     #main-content {
-        padding: 50px 0px;
+        padding: 50px 0;
     }
     header .navbar-default {
         min-height: 50px;

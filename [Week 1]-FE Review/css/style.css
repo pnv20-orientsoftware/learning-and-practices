@@ -250,6 +250,10 @@ a:hover {
     background-color: #ce1a00;
 }
 
+section .dolor {
+    min-height: 650px;
+}
+
 
 /* Header */
 
@@ -512,6 +516,9 @@ footer .check-list li {
     .content header {
         margin: 0 0 1.25em 0;
     }
+    section .dolor {
+        min-height: 710px;
+    }
 }
 
 
@@ -655,6 +662,18 @@ footer .check-list li {
     }
     body.navPanel-visible #navPanel {
         transform: translateX(0);
+    }
+    .two-column,
+    .three-column,
+    section .blurb,
+    .banner .banner-image {
+        order: 0;
+    }
+    .twocolumn-cate,
+    .threecolumn-cate,
+    section .links,
+    .banner .banner-button {
+        order: 1;
     }
 }
 

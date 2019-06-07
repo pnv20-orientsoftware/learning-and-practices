@@ -1,4 +1,27 @@
-/* Global style */
+/*----- Global style -----*/
+
+
+/* Font Yanone Kaffeesatz */
+
+@font-face {
+    font-family: 'Yanone Kaffeesatz';
+    src: url("./font/YanoneKaffeesatz-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Yanone Kaffeesatz';
+    src: url("./font/YanoneKaffeesatz-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Yanone Kaffeesatz';
+    src: url("./font/YanoneKaffeesatz-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Yanone Kaffeesatz';
+    src: url("./font/YanoneKaffeesatz-Regular.ttf") format("truetype");
+}
 
 html,
 body,

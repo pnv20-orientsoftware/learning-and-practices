@@ -27,7 +27,7 @@
 /* HEADER */
 
 body {
-    background: #D4D9DD url(../img/bg01.jpg);
+    background: #D4D9DD url(../img/bg01.jpg) repeat;
     position: relative;
 }
 
@@ -45,8 +45,9 @@ header .navbar-default {
     min-height: 135px;
     background-color: rgba(0, 0, 0, 0.75);
     background-image: url(../img/bg01.jpg);
+    background-repeat: repeat;
     border: none;
-    box-shadow: 0 2px 2px #2d2d2d;
+    border-bottom: 1px solid #202020;
 }
 
 header .navbar-default .navbar-brand {
@@ -65,7 +66,7 @@ header .navbar-default .navbar-nav a {
     line-height: 100px;
     color: #a0a8ab;
     font-size: 25px;
-    padding: 16px 25px;
+    padding: 16px 30px;
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
 }
 
@@ -100,6 +101,7 @@ header .navbar-default .navbar-collapse {
 #banner {
     padding: 40px;
     border-bottom: 1px solid #656565;
+    background: url(../img/bg01.jpg) repeat;
     box-shadow: inset 0 1px 0 0 #3e484a;
 }
 
@@ -109,6 +111,7 @@ header .navbar-default .navbar-collapse {
 }
 
 .btn-go-on {
+    padding: 5px 50px;
     margin: 30px 0 10px 0;
     background: #e42100;
     color: #FFFFFF;
@@ -287,6 +290,11 @@ footer .blurb {
 
 .footer-list li:last-child {
     border-bottom: 0;
+}
+
+footer .padding-r-l-0 {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 

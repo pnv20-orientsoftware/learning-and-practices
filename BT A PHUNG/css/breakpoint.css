@@ -1,7 +1,9 @@
 @media (max-width: 1200px) {
     header .navbar-default .navbar-nav a {
-        padding: 8px 35px;
-        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
+        padding: 17px 20px;
+    }
+    #banner .banner-content {
+        text-align: center;
     }
 }
 
@@ -19,6 +21,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
     header .navbar-default .navbar-nav a {
         font-size: 20px;
+        padding: 17px 13px;
     }
 }
 
@@ -35,6 +38,9 @@
         position: fixed;
         z-index: 1000;
         width: 100%;
+    }
+    header .navbar-default {
+        box-shadow: 0 2px 2px #2d2d2d;
     }
     header .navbar-default .navbar-brand {
         font-size: 30px;
@@ -80,13 +86,16 @@
         color: #FFFFFF;
         font-size: 22px;
         line-height: 50px;
+        padding: 8px 35px;
     }
     #banner {
         text-align: center;
-        padding: 80px 0 50px 0;
+        padding: 80px 0 30px 0;
     }
     .btn-go-on {
-        font-size: 1.7em;
+        font-size: 1.8em;
+        width: 100%;
+        margin: 30px 0;
     }
     #order-list {
         display: block;

@@ -4,7 +4,7 @@ $(document).ready(function() {
     $("#open-menu").click(function() {
         isClosedMenu = false;
         $("body").animate({
-            left: "235px"
+            left: "250px"
         }, 350);
         $('.navbar-nav').animate({
             left: "0px"
@@ -19,7 +19,7 @@ $(document).ready(function() {
             left: "0px"
         }, 350);
         $('.navbar-nav').animate({
-            left: "-245px"
+            left: "-250px"
         }, 350);
         $(this).hide();
         $("#open-menu").show();

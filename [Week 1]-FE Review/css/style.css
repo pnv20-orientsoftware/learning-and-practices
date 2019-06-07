@@ -105,6 +105,9 @@ a:hover {
     text-decoration: none;
 }
 
+
+/* container */
+
 .container {
     margin: 0 auto;
     max-width: 100%;
@@ -224,6 +227,9 @@ a:hover {
     display: block;
     width: 100%;
 }
+
+
+/* Homepage button */
 
 .button-large {
     background-image: linear-gradient(top, #ed391b, #ce1a00);
@@ -462,7 +468,7 @@ footer .check-list li {
 }
 
 
-/* Large */
+/* Large Screen */
 
 @media screen and (max-width: 1280px) {
     /* Multi-use */
@@ -522,7 +528,7 @@ footer .check-list li {
 }
 
 
-/* Medium */
+/* Medium Screen */
 
 #navPanel,
 #titleBar {
@@ -678,7 +684,7 @@ footer .check-list li {
 }
 
 
-/* Small */
+/* Small Screen */
 
 @media screen and (max-width: 736px) {
     /* Basic */

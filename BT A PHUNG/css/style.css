@@ -6,21 +6,11 @@
     width: 100%;
 }
 
-.author-name {
-    padding-top: 10px;
-    font-weight: 400;
-    font-size: 15px;
-}
-
 
 /* DEFINE TEXT COLOR */
 
 .text-white {
     color: #FFFFFF;
-}
-
-.text-dark {
-    color: #a3a1a1;
 }
 
 
@@ -42,19 +32,24 @@ header .navbar {
 }
 
 header .navbar-default {
-    min-height: 135px;
+    min-height: 130px;
     background-color: rgba(0, 0, 0, 0.75);
     background-image: url(../img/bg01.jpg);
     background-repeat: repeat;
     border: none;
-    border-bottom: 1px solid #202020;
+}
+
+header .navbar-default .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 header .navbar-default .navbar-brand {
     color: #FFFFFF;
-    font-size: 45px;
+    font-size: 49.5px;
     font-weight: 300;
     line-height: 100px;
+    padding: 25px 15px;
 }
 
 header .navbar-default .navbar-brand:hover,
@@ -65,16 +60,10 @@ header .navbar-default .navbar-collapse a:hover {
 header .navbar-default .navbar-nav a {
     line-height: 100px;
     color: #a0a8ab;
-    font-size: 25px;
-    padding: 16px 30px;
+    font-size: 26px;
+    padding: 25px 30px 5px 30px;
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
 }
-
-
-/* header .navbar-header {
-    margin-left: 0;
-    margin-right: 0;
-} */
 
 header .navbar-toggle {
     float: left;
@@ -92,17 +81,24 @@ header .navbar-default .navbar-collapse {
 .check-red {
     color: red;
     font-size: 30px;
-    padding: 0 12px;
+    padding: 0 15px 0 0;
 }
 
 
 /* PART 1: BANNER */
 
 #banner {
-    padding: 40px;
+    padding: 35px 0;
+    border-top: 1px solid #202020;
     border-bottom: 1px solid #656565;
     background: url(../img/bg01.jpg) repeat;
     box-shadow: inset 0 1px 0 0 #3e484a;
+}
+
+.banner-title {
+    font-size: 35px;
+    font-weight: 200;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
 }
 
 .img-border {
@@ -114,6 +110,7 @@ header .navbar-default .navbar-collapse {
     padding: 5px 50px;
     margin: 30px 0 10px 0;
     background: #e42100;
+    background-image: -webkit-linear-gradient(top, #ed391b, #ce1a00);
     color: #FFFFFF;
     font-weight: 300;
     font-size: 2.2em;
@@ -132,15 +129,12 @@ header .navbar-default .navbar-collapse {
 
 #main-content {
     font-size: 18px;
-    padding: 50px;
+    padding: 45px 0;
     background: #202020 url(../img/bg02.jpg);
 }
 
-#main-content section {
-    padding: 50 0;
-}
-
 #main-content .caption p {
+    line-height: 30px;
     text-align: justify;
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
     color: #a0a8ab;
@@ -152,13 +146,31 @@ header .navbar-default .navbar-collapse {
 #about {
     color: #474f51;
     font-size: 18px;
-    padding: 50px;
-    background: #f7f7f7;
+    padding: 45px 0 25px 0;
+    background: #f7f7f7 url(../img/bg04.png) repeat;
 }
 
 #about .about-part {
-    padding: 5px;
-    box-shadow: 1px 2px 2px rgba(189, 188, 188, 0.5);
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.1);
+    background: #FFFFFF;
+    padding: 40px 30px 45px 30px;
+    margin: 0 0 25px 0;
+}
+
+#about .about-part .text-dark {
+    color: #96a9b5;
+    font-size: 1.2em;
+}
+
+#about .about-part h2,
+#about .about-part h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+#about .about-part p {
+    line-height: 35px;
 }
 
 #about .image {
@@ -166,6 +178,7 @@ header .navbar-default .navbar-collapse {
 }
 
 .doing-list {
+    font-size: 19px;
     list-style-type: none;
     display: inline;
 }
@@ -177,45 +190,60 @@ header .navbar-default .navbar-collapse {
 
 .doing-list li,
 .quote-list li {
-    padding: 19px 0;
-    border-bottom: 1px solid #c1c1c1;
+    padding: 17px 0;
+    border-bottom: 1px solid #e2e6e8;
 }
 
 .doing-list li:last-child,
 .quote-list li:last-child {
     border-bottom: 0;
-    padding-bottom: 15px;
+    padding-bottom: 0;
 }
 
 .quote-list .quote-img {
     float: left;
-    padding: 0 10px;
+    padding: 0 20px 0 0;
 }
 
-.quote-list .quote-content {
-    padding: 5px 0;
-    line-height: 20px;
+.quote-list li p {
+    font-size: 20px;
 }
 
-#content {
-    background: #f7f7f7;
-    color: rgb(124, 124, 124);
-    font-size: 19px;
+#about .quote-list .author-name {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 #content section {
-    margin: 40px 0 50px 0;
-    padding: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #474f51;
+    margin: 0 0 25px 0;
+    padding: 40px 30px 45px 30px;
     box-shadow: 1px 2px 2px rgba(189, 188, 188, 0.5);
 }
 
 #content p {
     text-align: justify;
-    margin: 30px 0;
+    margin: 2em 0 2em 0;
 }
 
 
 /* THREE COLUMN OAGE */
+
+#content {
+    background: #f7f7f7 url(../img/bg04.png) repeat;
+    color: rgb(124, 124, 124);
+    font-size: 19px;
+    padding: 45px 0 45px 0;
+}
+
+#content section {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.1);
+    padding: 40px 30px 45px 30px;
+}
 
 .link-list {
     list-style-type: none;
@@ -224,7 +252,7 @@ header .navbar-default .navbar-collapse {
 
 .link-list li {
     border-bottom: 1px solid #e2e2e2;
-    padding: 8px 0;
+    padding: .17em 0;
 }
 
 .link-list a {
@@ -239,6 +267,18 @@ header .navbar-default .navbar-collapse {
 #order-list {
     display: flex;
     font-size: 19px;
+}
+
+#order-list h1,
+#content section h1 {
+    color: #373f42;
+    margin: 0 0 0.25em 0;
+}
+
+#order-list h3,
+#content section h3 {
+    color: #96a9b5;
+    margin: 0 0 2em 0;
 }
 
 #left-content {
@@ -257,26 +297,32 @@ header .navbar-default .navbar-collapse {
 /* FOOTER */
 
 footer {
-    color: #a3a1a1;
-    font-size: 19px;
+    color: #546b76;
+    font-size: 17px;
     background: #D4D9DD url(../img/bg03.jpg) repeat;
-    padding-top: 50px;
+    padding: 45px 0;
+}
+
+footer h3 {
+    color: #212f35;
+    margin: 0 0 1em 0;
 }
 
 footer .blurb {
+    line-height: 31px;
     text-align: justify;
-    text-justify: inter-word;
-    padding: 15px 0;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
 }
 
 .footer-list {
     list-style-type: none;
-    padding: 15px 0;
+    padding: 0 20px 45px 0;
 }
 
 .footer-list li a {
     text-decoration: underline;
     color: #546b76;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
 }
 
 .footer-list li a:hover {
@@ -284,8 +330,13 @@ footer .blurb {
 }
 
 .footer-list li {
-    border-bottom: 1px solid #c1c1c1;
+    border-top: 1px solid #e0e4e6;
+    border-bottom: 1px solid #b5bec3;
     padding: 7px 0;
+}
+
+.footer-list li:first-child {
+    border-top: 0;
 }
 
 .footer-list li:last-child {
@@ -302,8 +353,18 @@ footer .padding-r-l-0 {
 
 #copyright {
     background: #D4D9DD url(../img/bg03.jpg) repeat;
-    color: #a3a1a1;
-    font-size: 19px;
-    padding: 70px 0;
+    color: #8d9ca3;
+    font-size: 18px;
+    padding: 45px 0 80px 0;
     border-top: 1px solid rgb(202, 202, 202);
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+}
+
+#copyright a {
+    color: #8d9ca3;
+    text-decoration: underline;
+}
+
+#copyright a:hover {
+    text-decoration: none;
 }

@@ -137,32 +137,12 @@ a:hover {
     width: 1200px;
 }
 
-@media screen and (max-width: 1680px) {
-    .container {
-        width: 1200px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .container {
-        width: calc(100% - 40px);
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .container {
-        width: calc(100% - 50px);
-    }
-}
-
-@media screen and (max-width: 736px) {
-    .container {
-        width: calc(100% - 40px);
-    }
-}
-
 
 /* Multi-use */
+
+.link-list {
+    min-width: 180px;
+}
 
 .link-list li {
     padding: 0.2em 0 0.2em 0;
@@ -210,6 +190,11 @@ a:hover {
     font-weight: 400;
 }
 
+.check-list,
+.quote-list {
+    padding-top: 20px;
+}
+
 .check-list li {
     padding: 0.7em 0 0.7em 45px;
     font-size: 1.2em;
@@ -231,6 +216,7 @@ a:hover {
     display: block;
     margin: 0 0 2em 0;
     outline: 0;
+    padding-top: 20px;
 }
 
 .feature-image img {
@@ -255,6 +241,9 @@ a:hover {
 /* Homepage button */
 
 .button-large {
+    background-image: -moz-linear-gradient(top, #ed391b, #ce1a00);
+    background-image: -webkit-linear-gradient(top, #ed391b, #ce1a00);
+    background-image: -ms-linear-gradient(top, #ed391b, #ce1a00);
     background-image: linear-gradient(top, #ed391b, #ce1a00);
     display: inline-block;
     background-color: #ed391b;
@@ -267,16 +256,30 @@ a:hover {
     padding: 0 45px;
     outline: 0;
     border-radius: 10px;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.75), inset 0px 2px 0px 0px rgba(255, 192, 192, 0.5), inset 0px 0px 0px 2px rgba(255, 96, 96, 0.85), 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .button-large:hover {
+    background-image: -moz-linear-gradient(top, #fd492b, #de2a10);
+    background-image: -webkit-linear-gradient(top, #fd492b, #de2a10);
+    background-image: -ms-linear-gradient(top, #fd492b, #de2a10);
     background-image: linear-gradient(top, #fd492b, #de2a10);
     background-color: #fd492b;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.75), inset 0px 2px 0px 0px rgba(255, 192, 192, 0.5), inset 0px 0px 0px 2px rgba(255, 96, 96, 0.85), 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    text-decoration: none;
 }
 
 .button-large:active {
+    background-image: -moz-linear-gradient(top, #ce1a00, #ed391b);
+    background-image: -webkit-linear-gradient(top, #ce1a00, #ed391b);
+    background-image: -ms-linear-gradient(top, #ce1a00, #ed391b);
     background-image: linear-gradient(top, #ce1a00, #ed391b);
     background-color: #ce1a00;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.75), inset 0px 2px 0px 0px rgba(255, 192, 192, 0.5), inset 0px 0px 0px 2px rgba(255, 96, 96, 0.85), 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    text-decoration: none;
 }
 
 section .dolor {
@@ -297,6 +300,7 @@ section .dolor {
 .header>.container {
     position: relative;
     min-height: 155px;
+    max-width: 1175px;
 }
 
 .header h1 {
@@ -467,6 +471,10 @@ footer .check-list li {
     border-bottom: solid 1px #b5bec3;
 }
 
+.footer-title {
+    padding-left: 15px;
+}
+
 
 /* Copyright */
 
@@ -491,10 +499,22 @@ footer .check-list li {
 }
 
 
+/* Container Responsive */
+
+@media screen and (max-width: 1680px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+
 /* Large Screen */
 
 @media screen and (max-width: 1280px) {
     /* Multi-use */
+    .container {
+        width: calc(100% - 40px);
+    }
     .check-list li {
         font-size: 1em;
         line-height: 2em;
@@ -564,6 +584,10 @@ footer .check-list li {
     body {
         overflow-x: hidden;
     }
+    /* container */
+    .container {
+        width: calc(100% - 50px);
+    }
     /* Header */
     .header {
         text-align: center;
@@ -587,7 +611,7 @@ footer .check-list li {
         padding-top: 0;
     }
     /* Nav */
-    #page-wrapper {
+    .wrapper {
         backface-visibility: hidden;
         transition: transform 0.5s ease;
         padding-bottom: 1px;
@@ -683,7 +707,7 @@ footer .check-list li {
     #navPanel .link:last-child {
         border-bottom: 0;
     }
-    body.navPanel-visible #page-wrapper {
+    body.navPanel-visible .wrapper {
         transform: translateX(275px);
     }
     body.navPanel-visible #titleBar {
@@ -714,6 +738,10 @@ footer .check-list li {
     body {
         font-size: 13pt;
         line-height: 1.4em;
+    }
+    /* Container */
+    .container {
+        width: calc(100% - 40px);
     }
     /* Multi-use */
     .link-list li {

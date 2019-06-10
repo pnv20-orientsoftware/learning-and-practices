@@ -444,6 +444,7 @@ footer {
     text-shadow: 1px 1px 1px white;
     color: #546b76;
     text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+    background: url("./images/bg03.jpg");
 }
 
 footer h2 {

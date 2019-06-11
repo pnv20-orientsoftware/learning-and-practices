@@ -258,6 +258,7 @@ header .navbar-default .navbar-collapse {
 .link-list a {
     color: rgb(255, 112, 112);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .link-list a:hover {

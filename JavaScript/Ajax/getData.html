@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get API Data</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body onload="loadArticles()">
+
+    <div class='container' style="margin-top: 100px">
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>TITLE</th>
+                        <th>CONTENT</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        function loadArticles() {
+            $.ajax({
+                url: 'http://5cff088dd691540014b0d770.mockapi.io/articles',
+                method: 'GET',
+                success: function(data) {
+                    let dataTable = "";
+                    data.forEach(article => {
+                        dataTable += "<tr>";
+                        dataTable += "<td>" + article.id + "</td>";
+                        dataTable += "<td>" + article.title + "</td>";
+                        dataTable += "<td>" + article.content + "</td>";
+                        dataTable += "</tr>";
+                    });
+                    $('tbody').html(dataTable);
+                },
+                error: function() {
+                    console.log('error');
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

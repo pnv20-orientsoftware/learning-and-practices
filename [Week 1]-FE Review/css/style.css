@@ -436,6 +436,40 @@ section .dolor {
     min-height: 478px;
 }
 
+#fullname {
+    color: red;
+    font-weight: bold;
+}
+
+.data-img {
+    padding-left: 30px;
+}
+
+.sup-box {
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.data-box {
+    min-height: 200px;
+}
+
+.data-box a .user-name {
+    display: none;
+    position: absolute;
+}
+
+.data-box:hover a .user-name {
+    display: block;
+    color: red;
+    font-weight: bold;
+}
+
 
 /* Footer */
 
